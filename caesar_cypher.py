@@ -3,9 +3,7 @@ text = input("Enter one line of text: ")
 shift = input("Enter a number between 1 and 25: ")
 cipher = ''
 
-try:
-    shift = int(shift)
-except:
+while not shift.isnumeric():
     shift = input("You need to enter a number, please try again: ")
 
 while int(shift) > 25 or int(shift) < 1:
@@ -26,7 +24,4 @@ if int(shift) >= 1 and int(shift) <= 25:
             if code > ord('z'):
                 code = code - ord('z') + ord('a') - 1
             cipher = cipher + chr(code)
-else:
-    print("you entered the wrong number")
-
 print(cipher)
