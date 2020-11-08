@@ -3,7 +3,7 @@ text = input("Enter one line of text: ")
 shift = input("Enter a number between 1 and 25: ")
 cipher = ''
 
-    while not shift.isnumeric():
+    while not isinstance(shift, int):
         shift = input("You need to enter a number, please try again: ")
     while int(shift) > 25 or int(shift) < 1:
         shift = input("number not between 1 and 25, please try again: ")
