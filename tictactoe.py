@@ -72,7 +72,7 @@ def VictoryFor(board, sign):
         if sign =="O":
             DrawMove(board)
             VictoryFor(board, sign="X")      
-    if win != True and len(FreeSquares(board)) == 0: 
+    elif win != True and len(FreeSquares(board)) == 0: 
         print ("It's a tie")
 
 VictoryFor(board, sign="X")
