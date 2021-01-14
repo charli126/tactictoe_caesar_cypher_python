@@ -1,2 +1,3 @@
-# python_course
-for file caesar_cypher.py, line 6-9: need to improve so if user don't enter a number, they will keep being prompted to enter. 
+## Description 
+
+Two code script files, one containing the code to produce a caesar cipher, and the other to play tic tac toe. 
